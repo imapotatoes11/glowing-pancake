@@ -4,7 +4,7 @@ anchor.appendChild(text)
 let counter = 0;
 
 //animals = ["google", "https://www.google.com/", "youtube", "https://www.youtube.com/"]
-animals = ["ok alex", "https://en.wikipedia.org/wiki/2", "alex go fix and send fixed code on discord", "https://en.wikipedia.org/wiki/4"]
+animals = ["ok", "https://en.wikipedia.org/wiki/2", "ok alex", "https://en.wikipedia.org/wiki/4"]
 
 function run(count) {
 
