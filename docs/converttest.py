@@ -1,1 +1,0 @@
-file=open('converttest.txt','r')
