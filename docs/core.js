@@ -4,7 +4,7 @@ anchor.appendChild(text)
 let counter = 0;
 
 animals = [['Sei whale', 'Blue whale', 'North Atlantic right whale', 'North Pacific right whale', 'Wolverine', 'Vancouver island marmot', 'Caribou ', 'Fin whale', 'Wood bison', 'Sea otter', 'Haida ermine', 'Whooping crane', 'Eskimo curlew', 'Sprague’s pipit', 'Marbled murrelet', 'Short tailed albatross', 'Pink-footed shearwater', 'Spotted turtle', 'Blue racer ', 'Leatherback sea turtle', 'Blanding\'s turtle', 'Oregon spotted frog'],
- ['stuff','stuff'],
+ ['meme','deez nuts'],
   ["Fox", "American Badger"],
    ["Bob", "Alabama", "Alabama"]]
 countries = ["Canada", "USA", "Mexico","Bob"]
