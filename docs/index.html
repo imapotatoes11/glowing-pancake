@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="mystyle.css">
+<!--<link rel="stylesheet" href="mystyle.css">-->
+<link rel="stylesheet" href="style.css">
 <!--  <head> stuff is just icon stuff
   so is android-chrome-96x96.png
 and apple-touch-icon.png
@@ -22,13 +23,24 @@ and site.webmanifest-->
 <html>
 <script src="core.js"></script>
 <p id="P">Choose a country to look at its endangered animals</p>
-<select id="countries">
+<select id="countries"> 
   <option value="Canada">Canada</option>
   <option value="USA">USA</option>
   <option value="Mexico">Mexico</option>
   <option value="Bob">Bob</option>
 </select>
-<button onclick="counting()" id="button">Bob</button>
+<!--<button onclick="counting()" id="button">Bob</button>-->
+<div class="wrapper" onclick="counting()" id="button">
+  <a href="#"><span>Bob</span></a>
+</div>
+
+<a href="https://rickrollredirect.github.io" id="ee">clicke me! no frickroll def inetley cliekc</a>
 <p id="hello"></p>
+
+<!--
+<div class="wrapper" onclick="counting()" id="button">
+  <a href="#"><span>Hover Me!</span></a>
+</div>-->
+
 
 </html>

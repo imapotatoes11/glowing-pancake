@@ -1,6 +1,7 @@
 let anchor = document.createElement("a")
 let text = document.createTextNode("Link to view more information")
 anchor.appendChild(text)
+anchor.setAttribute("target","_blank")
 let counter = 0;
 
 animals = [['Sei whale', 'Blue whale', 'North atlantic right whale', 'North pacific right whale', 'Wolverine', 'Vancouver island marmot', 'Caribou ', 'Caribou have four stomachs', 'Fin whale', 'Wood bison', 'Sea otter', 'Haida ermine', 'Whooping crane', 'Eskimo curlew', 'Sprague\'s pipit', 'Marbled murrelet', 'Short tailed albatross', 'Pink-footed shearwater', 'Spotted turtle', 'Blue racer', 'Leatherback sea turtle', 'Blanding\'s turtle', 'Oregon spotted frog', 'Atlantic whitefish', 'Shortnose cisco', 'Copper redhorse', 'Atlantic salmon', 'Northern wolffish', 'Lake lamprey', 'Rusty patched bumblebee', 'Hungerford\'s crawling water beetle', 'Northern barrens tiger beetle', 'Mottled duskywing', 'Hine\'s emerald', 'Dakota skipper', 'Poweshiek skipperling', 'Tubercled blossom', 'Snuffbox mussel', 'Pinto abalone', 'Round hickorynut', 'Banff springs snail', 'Salamander mussel', 'Rayed bean'],
@@ -8,6 +9,11 @@ animals = [['Sei whale', 'Blue whale', 'North atlantic right whale', 'North paci
   ["Disambiguation", "Mexique", "Maracas"],
    ["Bob", "Alabama", "Lioglyphostoma aguadillanum"]]
 countries = ["Canada", "USA", "Mexico","Bob"]
+
+function rrrdirect() {
+  Window.open('https://rickrollredirect.github.io')
+}
+
 
 function wikipedia(animal) {
 
