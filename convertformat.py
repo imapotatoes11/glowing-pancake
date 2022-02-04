@@ -1,3 +1,5 @@
+open('convertoutput.txt','w').write('')
+
 Bobs=[]
 with open('converttest.txt','r') as file:
     for i in file.readlines():
