@@ -4,9 +4,9 @@ anchor.appendChild(text)
 let counter = 0;
 
 animals = [['Sei whale', 'Blue whale', 'North Atlantic right whale', 'North Pacific right whale', 'Wolverine', 'Vancouver island marmot', 'Caribou ', 'Fin whale', 'Wood bison', 'Sea otter', 'Haida ermine', 'Whooping crane', 'Eskimo curlew', 'Sprague’s pipit', 'Marbled murrelet', 'Short tailed albatross', 'Pink-footed shearwater', 'Spotted turtle', 'Blue racer ', 'Leatherback sea turtle', 'Blanding\'s turtle', 'Oregon spotted frog'],
- ['meme','deez nuts'],
-  ["Fox", "American Badger"],
-   ["Bob", "Alabama", "Alabama"]]
+ ['meme','deez nuts', 'Mcdonalds','fat people','guns'],
+  ["Disambiguation", "Mexique", "Maracas"],
+   ["Bob", "Alabama", "Lioglyphostoma aguadillanum"]]
 countries = ["Canada", "USA", "Mexico","Bob"]
 
 function wikipedia(animal) {
