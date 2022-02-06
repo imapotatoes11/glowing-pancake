@@ -82,3 +82,23 @@ function counting() {
   }
 
 }
+
+//https://stackoverflow.com/questions/32288722/call-python-function-from-js
+//FIRST RESPONSE I THINK
+
+function postData(input) {
+  document.getElementById('help').innerHTML="is this working?????";
+  $.ajax({
+      type: "POST",
+      url: "/functions.py",
+      data: { param: input },
+      success: callbackFunc
+  });
+}
+
+function callbackFunc(response) {
+  // do something with the response
+  console.log(response);
+  document.getElementById('help').innerHTML=response;
+}
+
