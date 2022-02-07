@@ -1,4 +1,5 @@
 <h2>Hello THis is A Test And Well Be Deleted Afterwards</h2>
+<a href="index.html">Go back</a>
 <form>
 
     <input id="bob" type="text" placeholder="Stuff">
@@ -8,14 +9,20 @@
 <p id="hello"></p>
 
 <script>
-   
+    
+    let anchor = document.createElement("a")
+    let text = document.createTextNode("This is a link")
+    anchor.appendChild(text)
+
+
     function run(a) {
         let x=[a]
         if (a.indexOf(' ')>=0) {
             let tmp=a.split(" ")
             x=tmp
         }
-        document.getElementById("hello").innerHTML = "https://www.google.com/search?q="+a+"+facts"
+        anchor.href = "https://www.google.com/search?q="+a+"+facts"
+        document.getElementById("hello").appendChild(anchor)
         return a
    
     }
