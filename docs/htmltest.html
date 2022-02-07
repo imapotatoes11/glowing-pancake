@@ -1,0 +1,23 @@
+<h2>Hello THis is A Test And Well Be Deleted Afterwards</h2>
+<form>
+
+    <input id="bob" type="text" placeholder="Stuff">
+   
+</form>
+<button onclick="run(document.getElementById('bob').value)">Button</button>
+<p id="hello"></p>
+
+<script>
+   
+    function run(a) {
+        let x=[a]
+        if (a.indexOf(' ')>=0) {
+            let tmp=a.split(" ")
+            x=tmp
+        }
+        document.getElementById("hello").innerHTML = "https://www.google.com/search?q="+a+"+facts"
+        return a
+   
+    }
+   
+</script>

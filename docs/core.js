@@ -85,6 +85,7 @@ function counting() {
 
 //https://stackoverflow.com/questions/32288722/call-python-function-from-js
 //FIRST RESPONSE I THINK
+//no worke
 
 function postData(input) {
   document.getElementById('help').innerHTML="is this working?????";
@@ -102,3 +103,25 @@ function callbackFunc(response) {
   document.getElementById('help').innerHTML=response;
 }
 
+////////////////////////////////////////////////
+function split(string,thing) {
+  let length = string.length
+  let array = []
+  for (let i = 0; i < length; i++) {
+     
+      if (string[i] != thing) {
+         
+          array.push(string[i])
+
+         
+      }
+  }
+  return array;
+}
+
+function getAnimalFact(animal,elementId) {
+  var x=[]
+  if (" " in animal) {
+    x=animal.split(" ");
+  }
+}
