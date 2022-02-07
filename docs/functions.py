@@ -12,14 +12,14 @@ class function:
         for i in range(_range):
             out.append(self.f(i))
         return out
-
+'''
 if __name__=="__main__":
     import os
     os.system('cls')
     function=function()
     d=[int(i) for i in function.fR(50)]
     for i in d:
-        print("*"*(round(i/50)))
+        print("*"*(round(i/50)))'''
 
 def main(inp):
     import os
