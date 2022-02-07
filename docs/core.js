@@ -88,7 +88,7 @@ function counting() {
 
 function postData(input) {
   document.getElementById('help').innerHTML="is this working?????";
-  $.ajax('http://cors.io/?https://blockchain.info/stats?format=json',{
+  $.ajax('https://cors.io/?',{
       type: "POST",
       url: "~/functions.py",
       data: { param: input },
