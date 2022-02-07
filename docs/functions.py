@@ -32,3 +32,4 @@ def main(inp):
 
 if __name__=="__main__":
     print(main("frrrresrdf"))
+    main("ef")
