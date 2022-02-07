@@ -29,3 +29,6 @@ def main(inp):
     for i in d:
         out.append("*"*(round(i/50)))
     return out
+
+if __name__=="__main__":
+    print(main("frrrresrdf"))
