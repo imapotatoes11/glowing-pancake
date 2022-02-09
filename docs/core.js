@@ -10,6 +10,34 @@ animals = [['Sei whale', 'Blue whale', 'North atlantic right whale', 'North paci
    ["Bob", "Alabama", "Lioglyphostoma aguadillanum"]]
 countries = ["Canada", "USA", "Mexico","Bob"]
 
+let copy = []
+function generate(country) {
+
+    let array = []
+    for (let i = 0; i < 5; i++) {
+
+        array.push(Math.floor((Math.random() * animals[country].length)))
+
+    }
+    let t = 0
+    for (let i = 0; i < array.length; i++) {  
+        for (let j = i+1; j < array.length; j++) {  
+            if (array[i] == array[j])
+                t = 1
+        }
+    }
+    
+    if (t == 1 || array.length == 0) {
+        
+        generate(country)
+        
+    } else if (t == 0 && array.length != 0) {
+        
+        copy = array
+        
+    }
+}
+
 function rrrdirect() {
   Window.open('https://rickrollredirect.github.io')
 }
@@ -41,19 +69,15 @@ return link
 
 }
 
-function run(count, num) {
+function run( num) {
 
-  if (count == animals[num].length) {
-
-    return 0
-
-  }
-  document.getElementById('hello').innerHTML += animals[num][count] + " "
-    anchor.href = wikipedia(animals[num][count])
+  generate(num);
+  for (let i=0;i<copy.length;i++) {
+    document.getElementById('hello').innerHTML += animals[num][i] + " "
+    anchor.href = wikipedia(animals[num][i])
     document.getElementById('hello').appendChild(anchor)
     document.getElementById('hello').innerHTML += "<br>"
- 
-    run(count+1, num)
+  }
 
 }
 
@@ -72,12 +96,12 @@ function counting() {
  counter++
   if (counter == 1) {
  
-    run(0, number)
+    run(number)
 
   } else if (counter != 1) {
 
     document.getElementById('hello').innerHTML = " "
-    run(0,number)
+    run(number)
 
   }
 
@@ -125,3 +149,8 @@ function getAnimalFact(animal,elementId) {
     x=animal.split(" ");
   }
 }
+
+
+
+
+

@@ -24,12 +24,13 @@ if __name__=="__main__":
 def main(inp):
     import os
     os.system('cls')
-    d=[int(i) for i in function.fR(50)]
+    func=function()
+    d=[int(i) for i in func.fR(20)]
     out=[]
     for i in d:
-        out.append("*"*(round(i/50)))
+        out.append("*"*(round(i/4)))
     return out
 
 if __name__=="__main__":
-    print(main("frrrresrdf"))
-    main("ef")
+    x=main("ef")
+    print('\n'.join(x))
