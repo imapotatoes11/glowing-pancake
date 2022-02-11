@@ -13,25 +13,13 @@ for i,j in enumerate(_in): _in[i]=j.removesuffix('\n')
 print(_in)
 
 out=[]
-'''for filterword in filterwords:
-    for windex,word in enumerate(_in):
-        try: word=word.split(' ')
-        except: word=[word]
-        for subword in word:
-            if subword.lower()==filterword.lower():
-                print(f'FOUND {_in[windex]}, CAPITALIZING TO {filterword}')
-                _in[windex]=filterword'''
-#\->i dont know what i was doing
-for index,j in enumerate(_in):
-    try: j.split(' ')
-    except: j=[j]
-    try:
-        for ind,i in j:
-            if i in filterwords:
-                j[ind]=j[ind].capitalize()
-    except:
-        pass
+names = filterwords
 
-out=_in
-print('\n\n\n')
-print(out)
+for i in _in:
+    test_str = i
+    output_str = ' '.join([word.capitalize() if word in names else word for word in test_str.split()])
+    print(output_str)
+    out.append(output_str)
+
+with open('C:/Users/Kevin/Desktop/git/glowing-pancake/docs/pythonlib/out.txt','w') as file:
+    file.write('\n'.join(out))
