@@ -37,8 +37,9 @@
   }*/
 
   #button{
+    border-radius: 50px;
     display: block;
-    width: 200px;
+    width: 500px;
     height: 40px;
     line-height: 40px;
     font-size: 18px;
@@ -58,6 +59,7 @@
   }
   
   #button:after{
+    border-radius: 1px;
     position: absolute;
     content: "";
     top: 0;
@@ -70,10 +72,12 @@
   
   #button:hover{
     color: #fff;
+    border-radius: 50px;
   }
   
   #button:hover:after{
     width: 100%;
+    border-radius: 50px;
   }
 
   /*.helpp{
