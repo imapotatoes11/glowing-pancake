@@ -76,14 +76,17 @@ for index,i in enumerate(flw):
 #check if word is real cuz word dataset (all_english_words.txt) isn't accurate
 print('\n\nverifying words.. ')
 from nltk.corpus import words
+import nltk
+nltk.download('words')
 v=0
+'''
 for ind,i in enumerate(ishpossiblewords):
     if i in words.words():
         pass
     else:
         ishpossiblewords.pop(ind)
     v+=1
-    if v%100==0: print("verifying words... (this may take a while)")
+    if v%100==0: print("verifying words... (this may take a while)")'''
 
 
 print()
@@ -92,3 +95,5 @@ print(', '.join(ishpossiblewords))
 
 #print('\n\n\n')
 #print(possiblewords)
+import time
+#time.sleep(99)
